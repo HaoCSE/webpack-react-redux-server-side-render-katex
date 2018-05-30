@@ -1,4 +1,4 @@
-Forked from https://github.com/catamphetamine/webpack-react-redux-server-side-render-example
+-- Forked from https://github.com/catamphetamine/webpack-react-redux-server-side-render-example --
 
 This sample project illustrates a React/Redux application with optional server-side rendering bundled with Webpack.
 
