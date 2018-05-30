@@ -9,6 +9,9 @@ import TimeAgo from 'react-time-ago'
 import Form, { Field, Submit } from 'simpler-redux-form'
 import { meta, preload } from 'react-website'
 
+import 'katex/dist/katex.min.css';
+import { BlockMath, InlineMath } from 'react-katex';
+
 import
 {
 	connectUsers,
@@ -99,6 +102,12 @@ export default class UsersPage extends Component
 		return (
 			<section className="page-content container">
 				<div>
+					<div>
+                This is an in-line expression <InlineMath math={String.raw`what zz the \frac{1-\left(\frac{1}{2}\right)^n}{2}`} />{' '}
+  passed as <code>math prop</code>. This is an in-line{' '}
+  <InlineMath math={'\\int_0^\\infty x^2 dx'} /> expression passed as{' '}
+  <code>children prop</code>.
+                </div>
 					<p className="users__description">
 						This is an example of REST API data querying (try disabling javascript and reloading the page).
 					</p>
